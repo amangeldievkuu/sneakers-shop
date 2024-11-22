@@ -8,3 +8,6 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.IntegerField()
     image = models.ImageField(upload_to="products/")
+
+    def __str__(self) -> str:
+        return f"name: {self.name}, brand: {self.brand}, price: {self.price}, image: {self.image}"
