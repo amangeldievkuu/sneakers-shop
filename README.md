@@ -38,18 +38,22 @@ A Django REST Framework-based backend API for a sneakers store. This project inc
     ```bash
         python3 -m venv .venv
         source .venv/bin/activate
+    ```
 
 3.Install dependencies:
     ```bash
         pip install -r requirements.txt
+    ```
 
 4.Run database migrations:
     ```bash
         python manage.py makemigrations
         python manage.py migrate
+    ```
 
 5.Start the development server:
     ```bash
         python manage.py runserver
+    ```
 
 6.Access the application at http://127.0.0.1:8000/.
